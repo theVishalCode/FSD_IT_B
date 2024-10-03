@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            background-color: whitesmoke;
+            margin:auto;
+            padding:10px;
+            width:50%;
+        }
+        input[type="email"]{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            width:100%
+        }
+        input[type="Password"]{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            width:100%
+        }
+        input[type="Confirm Password"]{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            width:100%
+        }
+        .signin{
+            background-color: rgb(245, 190,220);
+            margin:auto;
+            padding:10px;
+            width:50%;
+        }
+        input[type="Password"]:focus{
+            background-color: aqua;
+        }
+        input[type="email"]:focus{
+            background-color: blueviolet;
+        }
+        input[type="submit"]:focus{
+            background-color: aqua;
+            color: red;
+            margin: 10px;
+            width: 40px;
+        }
+        input[type="reset"]:focus{
+            width:40%;
+            margin:10px;
+            background-color:aqua;
+           color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account</p>
+    <hr>
+   <form name="regiter" method="post" action="/register">
+     <label for="email">
+        <b>Email:</b>
+        <input type="email" placeholder="Enter Valid Email" id="email"> 
+     </label>
+     <label for="Password">
+        <b>Password:</b>
+        <input type="Password" placeholder="Enter Password" id="Password"> 
+     </label>
+     <label for="password">
+        <b>Confirm Password:</b>
+        <input type="Password" placeholder="Confirm Password" id="password"> 
+     </label>
+     <hr>
+     <p> By creating an account u agree to our<a href="#"> teams and provacy</a> </p>
+     <input type="submit" value="REGISTER"/>
+     <input type="reset"  value="RESET"/>
+     
+   </form>
+   </div>
+   <div class="signin">
+     Already have an account?<a herf="#"> Sign in</a>
+   </div>
+</body>
+</html>
